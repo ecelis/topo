@@ -1,2 +1,4 @@
+fyne.io/fyne/v2 v2.5.4 h1:bg/joTgXZj2pRVOY5g3o4ZHY0ZE2w+4zs4ZKG+Xhg64=
+fyne.io/fyne/v2 v2.5.4/go.mod h1:0GOXKqyvNwk3DLmsFu9v0oYM0ZcD1ysGnlHCerKoAmo=
 github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf h1:iW4rZ826su+pqaw19uhpSCzhj44qo35pNgKFGqzDKkU=
 github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
