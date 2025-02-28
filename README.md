@@ -9,7 +9,7 @@ vagrant up
 ## Linux Setup
 
 ```sh
-go build cmd/topo
+go build -o topo cmd/topo/main.go
 ```
 
 Create a systemd service file (e.g., `topo.service`) and place it in `/etc/systemd/system/`:
