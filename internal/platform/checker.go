@@ -8,12 +8,12 @@ import (
 )
 
 type RouteChecker struct {
-	logger Logger // interface for syslog/eventlog
-	routes []route.Route
+	// Logger Logger // interface for syslog/eventlog
+	Routes []route.Route
 }
 
-func (rc *RouteChecker) checkAndUpdateRoutes() error {
-	for _, expected := range rc.routes {
+func (rc *RouteChecker) CheckAndUpdateRoutes() error {
+	for _, expected := range rc.Routes {
 		exists, err := linux.RouteExists(expected)
 		if err != nil {
 			fmt.Println(fmt.Sprintf("Failed checking route %s: %v", expected.Destination, err))

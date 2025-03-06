@@ -1,6 +1,9 @@
 //go:build linux
 // +build linux
 
+/*
+Copyright © 2025 Ernesto Celis <ernesto@patito.ninja>
+*/
 package platform
 
 import (
