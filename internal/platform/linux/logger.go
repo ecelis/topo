@@ -1,3 +1,6 @@
+/*
+Copyright © 2025 Ernesto Celis <ernesto@patito.ninja>
+*/
 package linux
 
 import "log/syslog"
