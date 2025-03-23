@@ -39,3 +39,9 @@ sudo systemctl start route-service.service
 Run the r`topo.exe` from an administrator command prompt.
 
 You can use a service manager like NSSM if you want to run it as a service.
+
+## Test
+
+```sh
+ip route show <gw>
+```
