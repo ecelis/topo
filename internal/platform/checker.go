@@ -24,9 +24,10 @@ func (rc *RouteChecker) CheckAndUpdateRoutes() error {
 		if !exists {
 			fmt.Println(fmt.Sprintf("Route %s missing, reinstalling", expected.Destination))
 			// rc.logger.Info(fmt.Sprintf("Route %s missing, reinstalling", expected.Destination))
-			// if err := AddRoute(expected); err != nil {
-			// 	rc.logger.Error(fmt.Sprintf("Failed reinstalling route %s: %v", expected.Destination, err))
-			// }
+			if err := AddRoute(expected); err != nil {
+				// rc.logger.Error(fmt.Sprintf("Failed reinstalling route %s: %v", expected.Destination, err))
+				fmt.Printf("Failed reinstalling route %s: %v", expected.Destination, err)
+			}
 		}
 	}
 	return nil

@@ -23,7 +23,7 @@ func AddRoute(r route.Route) error {
 	defer logger.Close()
 
 	var cmd *exec.Cmd
-	if r.Destination == "0.0.0.0" {
+	if r.Destination == "0.0.0.0" || r.Destination == "default" {
 		cmd = exec.Command("route", "add", "default", "gw", r.Gateway)
 		logger.Info(fmt.Sprintf(LogAddDefaultRoute, r.Gateway))
 	} else {
